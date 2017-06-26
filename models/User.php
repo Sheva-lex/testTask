@@ -77,7 +77,7 @@ class User
 
         $db = Db::getConnection();
 
-        $sql = 'SELECT COUNT(*) FROM user WHERE email = :email';
+        $sql = 'SELECT COUNT(*) FROM students WHERE email = :email';
 
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
